@@ -1,42 +1,29 @@
 import  React, {Component} from "react"
 
+import Carousel from 'react-bootstrap/Carousel'
+
 
 const Home = (props) => (
     <>
-    {/* ======= Hero Section ======= */}
-    <section className="hero">
-      <div className="container text-center">
-        <div className="row">
-          <div className="col-md-12">
-            <a className="hero-brand" href="index.html" title="Home"><img alt="Bell Logo" src="assets/img/logo.png" /></a>
-          </div>
-        </div>
-        <div className="col-md-12">
-          <h1>
-            A theme with personality
-          </h1>
-          <p className="tagline">
-            This is a powerful theme with some great features that you can use in your future projects.
-          </p>
-          <a className="btn btn-full scrollto" href="#about">Get Started Now</a>
-        </div>
-      </div>
-    </section>{/* End Hero */}
+
     {/* ======= Header ======= */}
     <header id="header">
       <div className="container">
         <div id="logo" className="pull-left">
-          <a href="index.html"><img src="assets/img/logo-nav.png" alt="" /></a>
+       {/*   <a href="index.html"><img src="assets/img/logo-nav.png" alt="" /></a>*/}
           {/* Uncomment below if you prefer to use a text image */}
-          {/*<h1><a href="#hero">Bell</a></h1>*/}
+          <h1><a href="#hero">UniVote</a></h1>
         </div>
         <nav id="nav-menu-container">
           <ul className="nav-menu">
-            <li><a href="#about">About Us</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#features">Features</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#team">Team</a></li>
-            <li className="menu-has-children"><a href>Drop Down</a>
+	    <li><a href="#contact">Request a Demo</a></li>
+	    <li><a className="btn btn-full scrollto" href="#contact">Request a Demo</a></li>
+  	    <li><a className="btn btn-full scrollto" href="#about">Signup</a></li>
+            {/*<li><a href="#portfolio"></a></li>*/}
+           {/* <li><a href="#team">Team</a></li>*/}
+            {/*<li className="menu-has-children"><a href>Drop Down</a>
               <ul>
                 <li><a href="#">Drop Down 1</a></li>
                 <li className="menu-has-children"><a href="#">Drop Down 2</a>
@@ -52,8 +39,8 @@ const Home = (props) => (
                 <li><a href="#">Drop Down 4</a></li>
                 <li><a href="#">Drop Down 5</a></li>
               </ul>
-            </li>
-            <li><a href="#contact">Contact Us</a></li>
+            </li>*/}
+            
           </ul>
         </nav>
         {/* #nav-menu-container */}
@@ -62,55 +49,63 @@ const Home = (props) => (
         </nav>
       </div>
     </header>{/* End Header */}
+
+
+
+    {/* ======= Hero Section ======= */}
+    <section className="hero">
+      <div className="container text-center">
+        <div className="row">
+          <div className="col-md-12">
+            <a className="hero-brand" href="index.html" title="Home"><img max-width="80" alt="Univote Logo" src="assets/img/logo.png" /></a>
+          </div>
+        </div>
+        <div className="col-md-12">
+          <h1>
+           UNIVOTE is a Decentralized Online voting system
+          </h1>
+          <p className="tagline">
+           Your voters deserve a secure, and transparent way to vote, accessible from any device and backed by blockchain.
+          </p>
+          	
+        </div>
+      </div>
+    </section>{/* End Hero */}
+
+
+
+
     <main id="main">
       {/* ======= About Section ======= */}
       <section className="about" id="about">
         <div className="container text-center">
           <h2>
-            About Bell Theme
+            UNIVOTE FEATURES
           </h2>
           <p>
-            Voluptua scripserit per ad, laudem viderer sit ex. Ex alia corrumpit voluptatibus usu, sed unum convenire id. Ut cum nisl moderatius, per nihil dicant commodo an. Eum tacimates erroribus ad. Atqui feugiat euripidis ea pri, sed veniam tacimates ex. Menandri
-            temporibus an duo.
+            UNIVOTE is based on blockchain technology, which makes voting 100% secure and immutable. Voter anonymity is guaranteed by transparent crypto algorithms.
           </p>
-          <div className="row stats-row">
+
+         {/* <div className="row stats-row">
             <div className="stats-col text-center col-md-3 col-sm-6">
               <div className="circle">
-                <span className="stats-no" data-toggle="counter-up">232</span> Satisfied Customers
+                <span className="stats-no" data-toggle="counter-up">3</span> Elections Casted
               </div>
             </div>
-            <div className="stats-col text-center col-md-3 col-sm-6">
-              <div className="circle">
-                <span className="stats-no" data-toggle="counter-up">79</span> Released Projects
-              </div>
-            </div>
+        
             <div className="stats-col text-center col-md-3 col-sm-6">
               <div className="circle">
                 <span className="stats-no" data-toggle="counter-up">1,463</span> Hours Of Support
               </div>
             </div>
-            <div className="stats-col text-center col-md-3 col-sm-6">
-              <div className="circle">
-                <span className="stats-no" data-toggle="counter-up">15</span> Hard Workers
-              </div>
-            </div>
-          </div>
+     
+          </div>*/}
         </div>
       </section>{/* End About Section */}
-      {/* ======= Welcome Section ======= */}
-      <section className="welcome text-center">
-        <h2>Welcome to a perfect theme</h2>
-        <p>
-          This is the most powerful theme with thousands of options that you have never seen before.
-        </p>
-        <img alt="Bell - A perfect theme" className="gadgets-img hidden-md-down" src="assets/img/gadgets.png" />
-      </section>{/* End Welcome Section */}
-      {/* ======= Features Section ======= */}
+
+  {/* ======= Features Section ======= */}
       <section className="features" id="features">
         <div className="container">
-          <h2 className="text-center">
-            Features
-          </h2>
           <div className="row">
             <div className="feature-col col-lg-4 col-xs-12">
               <div className="card card-block text-center">
@@ -120,13 +115,13 @@ const Home = (props) => (
                   </div>
                 </div>
                 <div>
-                  <h3>
-                    Custom Design
+                                 <h3>
+                    Transparent & Immutable
                   </h3>
                   <p>
-                    Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+                    One of the main characteristics of blockchain technology is its transparency. Vote's casted are stored on an Immutable ledger, distributed across millions of computers called peers
                   </p>
-                </div>
+                   </div>
               </div>
             </div>
             <div className="feature-col col-lg-4 col-xs-12">
@@ -138,10 +133,10 @@ const Home = (props) => (
                 </div>
                 <div>
                   <h3>
-                    Responsive Layout
+                    Voter Anonymity & Security
                   </h3>
                   <p>
-                    Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+                  Voter anonymity is guaranteed by the power of the ethereum powered smart contract, votes are secured and cannot get missing
                   </p>
                 </div>
               </div>
@@ -155,89 +150,100 @@ const Home = (props) => (
                 </div>
                 <div>
                   <h3>
-                    Innovative Ideas
+                   Easy to organize, easy to vote
                   </h3>
                   <p>
-                    Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+                   With UNIVOTE, creating an election is intuitive, easy and fast. Letus handle all the coding. Voting can be conducted on the go on a smartphone or tablet.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="feature-col col-lg-4 col-xs-12">
-              <div className="card card-block text-center">
-                <div>
-                  <div className="feature-icon">
-                    <span className="fa fa-database" />
-                  </div>
-                </div>
-                <div>
-                  <h3>
-                    Good Documentation
-                  </h3>
-                  <p>
-                    Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="feature-col col-lg-4 col-xs-12">
-              <div className="card card-block text-center">
-                <div>
-                  <div className="feature-icon">
-                    <span className="fa fa-cutlery" />
-                  </div>
-                </div>
-                <div>
-                  <h3>
-                    Excellent Features
-                  </h3>
-                  <p>
-                    Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="feature-col col-lg-4 col-xs-12">
-              <div className="card card-block text-center">
-                <div>
-                  <div className="feature-icon">
-                    <span className="fa fa-dashboard" />
-                  </div>
-                </div>
-                <div>
-                  <h3>
-                    Retina Ready
-                  </h3>
-                  <p>
-                    Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        
+
         </div>
       </section>{/* End Features Section */}
       {/* ======= Call to Action Section ======= */}
-      <section className="cta">
+
+
+      {/* ======= Welcome Section ======= */}
+      <section className="welcome text-center">
+        <h2>Backed by Blockchain</h2>
+        <p>
+        UNIVOTE is based on blockchain technology, which makes voting 100% secure and immutable. Voter anonymity is guaranteed by transparent crypto algorithms.
+        </p>
+ 
+
+ {/* ======= @Mega/@Goody Change this image to show that it works on both mobile and desktop well ======= */}
+        <img alt="Univote - A perfect theme" className="gadgets-img hidden-md-down" src="assets/img/gadgets.png" />
+      </section>{/* End Welcome Section */}
+          <section className="cta">
         <div className="container">
           <div className="row">
             <div className="col-lg-9 col-sm-12 text-lg-left text-center">
               <h2>
-                Call to Action Section
+                Your full solution
               </h2>
-              <p>
-                Lorem ipsum dolor sit amet, nec ad nisl mandamus imperdiet, ut corpora cotidieque cum. Et brute iracundia his, est eu idque dictas gubergren
-              </p>
+<div class="univotefeatures"> 
+<ul>
+  <li> Univote offers your voters the chance to Vote on your phone, desktop, tablet with ease</li>
+  <li>Our security measures protect you, your votes, and your data against risk.</li>
+  <li>Eliminate the risk of double voting and voter fraud. Closed voting events enable trustworthy decision making.</li>
+  <li> Prove the integrity of your vote. Our robust auditing tools let you demonstrate an accountable voting process.</li>
+</ul> 
+</div>   
+<div class="button-wrapper">
+  <a class="button cta-button" href="#contact">I need more features</a>
+</div>
+	
             </div>
-            <div className="col-lg-3 col-sm-12 text-lg-right text-center">
-              <a className="btn btn-ghost" href="#">Buy This Theme</a>
             </div>
-          </div>
-        </div>
-      </section>{/* End Call to Action Section */}
-      {/* ======= Portfolio Section ======= */}
+	</div>        
+</section>
+
+{/* End Call to Action Section */}
+
+{/* @Goodness/@Mega Add App Screenshots here*/}
+<Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="assets/img/blockchain.png"
+      alt="First slide"
+    />
+    <Carousel.Caption>
+      <h3>Mobile and Desktop Ready</h3>
+      <p>Blockchain on mobile</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="assets/img/blockchain.jpg"
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+      <h3>Plane & simple</h3>
+      <p>Simple interface for easy voting</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="assets/img/vote.jpg"
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+      <h3>Vote</h3>
+      <p>Cast Your Vote.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+
+
+      {/* ======= Portfolio Section ======= 
       <section className="portfolio" id="portfolio">
         <div className="container text-center">
           <h2>
@@ -382,7 +388,7 @@ const Home = (props) => (
           </div>
         </div>
       </section>{/* End Portfolio Section */}
-      {/* ======= Team Section ======= */}
+      {/* ======= Team Section ======= 
       <section className="team" id="team">
         <div className="container">
           <h2 className="text-center">
@@ -481,15 +487,15 @@ const Home = (props) => (
               <div className="info">
                 <div>
                   <i className="fa fa-map-marker" />
-                  <p>A108 Adam Street<br />New York, NY 535022</p>
+                  <p>Millionaires Qtrs,<br />Jos Plateau, Nigeria</p>
                 </div>
                 <div>
                   <i className="fa fa-envelope" />
-                  <p>info@example.com</p>
+                  <p>info@univote.live</p>
                 </div>
                 <div>
                   <i className="fa fa-phone" />
-                  <p>+1 5589 55488 55s</p>
+                  <p>+234 5589 55488 55s</p>
                 </div>
               </div>
             </div>
@@ -515,7 +521,7 @@ const Home = (props) => (
                   <div className="mb-3">
                     <div className="loading">Loading</div>
                     <div className="error-message" />
-                    <div className="sent-message">Your message has been sent. Thank you!</div>
+                    <div className="sent-message">Your message has been sent. Thank you!we will contact you soon </div>
                   </div>
                   <div className="text-center"><button type="submit">Send Message</button></div>
                 </form>
@@ -532,17 +538,18 @@ const Home = (props) => (
           <div className="row">
             <div className="col-lg-6 col-xs-12 text-lg-left text-center">
               <p className="copyright-text">
-                © Copyright <strong>Bell</strong>. All Rights Reserved
+                © Copyright <strong>Univote</strong>. All Rights Reserved
               </p>
-              <div className="credits">
+               {/* <div className="credits">
                 {/*
           All the links in the footer should remain intact.
           You can delete the links only if you purchased the pro version.
           Licensing information: https://bootstrapmade.com/license/
           Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bell
-        */}
+       
                 Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-              </div>
+              </div>  */}
+
             </div>
             <div className="col-lg-6 col-xs-12 text-lg-right text-center">
               <ul className="list-inline">
@@ -550,26 +557,38 @@ const Home = (props) => (
                   <a href="index.html">Home</a>
                 </li>
                 <li className="list-inline-item">
-                  <a href="#about">About Us</a>
+                  <a href="#about">About</a>
                 </li>
                 <li className="list-inline-item">
                   <a href="#features">Features</a>
                 </li>
-                <li className="list-inline-item">
+
+                  {/*<li className="list-inline-item">
                   <a href="#portfolio">Portfolio</a>
                 </li>
                 <li className="list-inline-item">
                   <a href="#team">Team</a>
                 </li>
                 <li className="list-inline-item">
-                  <a href="#contact">Contact</a>
-                </li>
+                  <a href="#contact">Contact</a>  
+                </li>*/}
               </ul>
             </div>
           </div>
         </div>
       </div>
     </footer>{/* End Footer */}
+<script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+
+<script
+  src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+  crossorigin></script>
+
+<script
+  src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+  crossorigin></script>
+
+<script>var Alert = ReactBootstrap.Alert;</script>
     <a className="scrolltop" href="#"><span className="fa fa-angle-up" /></a>
 </>  
 
