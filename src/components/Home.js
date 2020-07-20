@@ -18,8 +18,8 @@ const Home = (props) => (
           <ul className="nav-menu">
             <li><a href="#about">About</a></li>
             <li><a href="#features">Features</a></li>
-	    <li><a href="#contact">Request a Demo</a></li>
-	    <li><a className="btn btn-full scrollto" href="#contact">Request a Demo</a></li>
+	    <li><a href="https://uni-vote.herokuapp.com/" target="_blank">Request a Demo</a></li>
+	    {/* <li><a className="btn btn-full scrollto" href="#contact">Request a Demo</a></li> */}
   	    <li><a className="btn btn-full scrollto" href="#about">Signup</a></li>
             {/*<li><a href="#portfolio"></a></li>*/}
            {/* <li><a href="#team">Team</a></li>*/}
@@ -56,9 +56,9 @@ const Home = (props) => (
     <section className="hero">
       <div className="container text-center">
         <div className="row">
-          <div className="col-md-12">
+          {/* <div className="col-md-12">
             <a className="hero-brand" href="index.html" title="Home"><img max-width="80" alt="Univote Logo" src="assets/img/logo.png" /></a>
-          </div>
+          </div> */}
         </div>
         <div className="col-md-12">
           <h1>
