@@ -9,6 +9,30 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
 
+.button {
+  border: none;
+  border-radius: 3em;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  width: auto;
+}
+
+.univotefeatures {
+color: white; 
+}
+
+.button-wrapper {
+  display: block;
+  text-align: center;
+}
+
+}
+.h3 {
+color: black;
+}
+
 p {
   line-height: 1.55;
   color: #333;
